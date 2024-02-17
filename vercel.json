@@ -1,5 +1,18 @@
 {
-    "rewrites":  [
-        {"source": "/(.*)", "destination": "/"}
-     ]
- }
+    "name": "bharath-rivers",
+    "builds": [
+      {
+        "src": "/src/index.html",
+        "use": "@vercel/static-build",
+        "config": {
+          "outputDirectory": "public"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "your-serverless-function-or-static-file"
+      }
+    ]
+  }
