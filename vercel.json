@@ -2,7 +2,7 @@
     "name": "bharath-rivers",
     "builds": [
       {
-        "src": "/src/index.html",
+        "src": "/",
         "use": "@vercel/static-build",
         "config": {
           "outputDirectory": "public"
